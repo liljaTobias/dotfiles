@@ -65,8 +65,8 @@
   },
 
   "modules-right": [
-    "pulseaudio",
     "group/audio-devices",
+    "pulseaudio",
     "network",
     "upower"
   ],
