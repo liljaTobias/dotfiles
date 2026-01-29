@@ -1,0 +1,23 @@
+{
+  "custom/audio-output-sennheiser": {
+    "format": "\uF025 {text}",
+    "return-type": "json",
+    "interval": 2,
+    "exec": "~/repos/scripts/waybar/audio-outputs.ts 'USB Audio Front Headphones'",
+    "on-click": "~/repos/scripts/waybar/audio-outputs.ts 'USB Audio Front Headphones' true"
+  },
+  "custom/audio-output-wireless": {
+    "format": "󰥰 {text}",
+    "return-type": "json",
+    "interval": 2,
+    "exec": "~/repos/scripts/waybar/audio-outputs.ts 'Arctis Pro Wireless Game' ",
+    "on-click": "~/repos/scripts/waybar/audio-outputs.ts 'Arctis Pro Wireless Game' true"
+  },
+  "custom/audio-output-speakers": {
+    "format": "󰓃 {text}",
+    "return-type": "json",
+    "interval": 2,
+    "exec": "~/repos/scripts/waybar/audio-outputs.ts 'G560 Gaming Speaker Analog Stereo'",
+    "on-click": "~/repos/scripts/waybar/audio-outputs.ts 'G560 Gaming Speaker Analog Stereo' true"
+  }
+}

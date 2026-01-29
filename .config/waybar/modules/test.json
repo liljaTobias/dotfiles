@@ -1,0 +1,6 @@
+{
+  "custom/test": {
+    "exec": "echo '{\"text\":\"TEST\"}'",
+    "interval": 5
+  }
+}

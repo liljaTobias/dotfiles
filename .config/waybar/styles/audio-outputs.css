@@ -1,0 +1,10 @@
+#audio-devices label {
+  padding: 0 10px;
+  margin: 0 5px;
+  background-color: #edb844;
+  border-radius: 3px;
+}
+
+#audio-devices label.active {
+  background-color: #45ed7a;
+}

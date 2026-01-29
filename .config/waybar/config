@@ -1,0 +1,79 @@
+{
+  "include": [
+    "./modules/audio-outputs.json"
+  ],
+  "group/audio-devices": {
+    "orientation": "horizontal",
+    "modules": [
+      "custom/audio-output-sennheiser",
+      "custom/audio-output-wireless",
+      "custom/audio-output-speakers"
+    ]
+  },
+
+  "network": {
+    // "interface": "wlp2s0", // (Optional) To force the use of this interface
+    "format-wifi": "",
+    "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
+    "format-disconnected": "Disconnected ⚠",
+    "interval" : 7,
+    "tooltip": true,
+    "tooltip-format-wifi": "SSID: {essid}\nSignal: {signalStrength}%\nIP: {ipaddr}/{cidr}"
+  },
+  "pulseaudio": {
+    //"scroll-step": 1,
+    "format": "{volume}% {icon}",
+    "format-bluetooth": "{volume}% {icon}",
+    "format-muted": "",
+    "format-icons": {
+      "headphones": "",
+      "handsfree": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", ""]
+    },
+    "on-click": "pavucontrol"
+  },
+
+  "upower": {
+    "icon-size": 20,
+    "native-path": "hidpp_battery_4",
+    "tooltip": true
+  },
+
+  "clock": {
+    "format": "{:%a %d %b %Y %H:%M}",
+    "locale": "sv_SE.utf8"
+  },
+
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "format-icons": {
+      "1": "",
+      "2": "",
+      "3": "🎮",
+      "4": "",
+      "5": "",
+      "urgent": "",
+      "active": "",
+      "default": ""
+    },
+    "sort-by-number": true
+  },
+
+  "modules-right": [
+    "pulseaudio",
+    "group/audio-devices",
+    "network",
+    "upower"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-left": [
+    "hyprland/workspaces"
+  ]
+}

@@ -1,0 +1,16 @@
+#custom-audio-outputs {
+  padding: 0 6px;
+}
+
+#custom-audio-outputs .active {
+  color: #89b4fa; /* accent color */
+  background: rgba(137, 180, 250, 0.15);
+  border-radius: 6px;
+  padding: 4px 6px;
+}
+
+#custom-audio-outputs .inactive {
+  color: #6c7086;
+  padding: 4px 6px;
+}
+

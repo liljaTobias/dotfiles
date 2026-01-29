@@ -1,0 +1,43 @@
+@import url("./styles/audio-outputs.css");
+
+* {
+  border: none;
+  border-radius: 0;
+  font-family: "JetBrainsMono NF";
+  font-size: 14px;
+  min-height: 0;
+}
+
+#window {
+  font-weight: bold;
+}
+
+window#waybar {
+  background: rgba(43, 48, 59, 0);
+  /* border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
+  color: #ffffff;
+}
+
+window#waybar.hidden {
+  opacity: 0;
+}
+
+tooltip {
+  font-family: "JetBrainsMono NF";
+  border-radius: 5px;
+}
+
+#clock,
+#network,
+#pulseaudio {
+  padding: 0 10px 0px 10px;
+  margin: 0 5px;
+}
+
+#clock {
+  font-weight: bold;
+}
+
+#pulseaudio {
+  background-color: #5b91e3;
+}
